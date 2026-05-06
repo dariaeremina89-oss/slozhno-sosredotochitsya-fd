@@ -219,6 +219,10 @@
   display: inline-block;
 }
 
+.gallery-section {
+  gap: 10px;
+}
+
 .gallery-section__list {
   display: grid;
   gap: 10px;
@@ -310,6 +314,7 @@
   .gallery-section {
     grid-column: 1 / -1;
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .gallery-section .content-section__title {
