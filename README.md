@@ -14,4 +14,8 @@
 
 ## Ссылка на проект
 
-https://github.com/dariaeremina89-oss/slozhno-sosredotochitsya-fd#
+https://github.com/dariaeremina89-oss/slozhno-sosredotochitsya-fd
+
+## Ссылка на GitHub Pages
+
+https://dariaeremina89-oss.github.io/slozhno-sosredotochitsya-fd/
