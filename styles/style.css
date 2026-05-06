@@ -162,7 +162,10 @@
   gap: 20px;
 }
 
-.content-section__cards {
+.content-section__cards,
+.content-section__cards > li,
+.content-section__list,
+.content-section__list > li {
   display: grid;
   gap: 20px;
 }
@@ -228,11 +231,16 @@
   gap: 10px;
 }
 
+.gallery-section__item {
+  display: block;
+}
+
 .gallery-section__image {
   display: block;
   inline-size: 100%;
   block-size: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 /* ---------- footer ---------- */
@@ -322,33 +330,32 @@
   }
 
   .gallery-section__list {
-    display: grid;
     grid-column: 1 / -1;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
 
-  .gallery-section__image_type_sunset {
+  .gallery-section__item_type_sunset {
     grid-column: 1 / 3;
     grid-row: 1;
   }
 
-  .gallery-section__image_type_ice-cream {
+  .gallery-section__item_type_ice-cream {
     grid-column: 3;
     grid-row: 1 / 3;
   }
 
-  .gallery-section__image_type_tape {
+  .gallery-section__item_type_tape {
     grid-column: 1;
     grid-row: 2 / 4;
   }
 
-  .gallery-section__image_type_books {
+  .gallery-section__item_type_books {
     grid-column: 2;
     grid-row: 2;
   }
 
-  .gallery-section__image_type_street {
+  .gallery-section__item_type_street {
     grid-column: 2 / 4;
     grid-row: 3;
   }
