@@ -163,11 +163,14 @@
 }
 
 .content-section__cards,
+.content-section__list {
+    display: grid;
+    gap: 20px;
+}
+
 .content-section__cards > li,
-.content-section__list,
 .content-section__list > li {
-  display: grid;
-  gap: 20px;
+    display: grid;
 }
 
 .content-card {
