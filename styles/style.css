@@ -2,26 +2,27 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
-  position: relative;
-  min-block-size: 100vh;
   color: var(--text-color);
   font-family: var(--font-family);
   font-size: 18px;
-}
-
-.page::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  background: var(--bg-color) var(--bg-image) center / cover no-repeat;
+  background-color: var(--bg-color);
+  background-image: var(--bg-image);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .header,
 .footer {
-    block-size: 100vh; /* fallback */
+  block-size: 100vh;
+  min-block-size: 668px;
+}
+
+@supports (height: 100dvh) {
+  .header,
+  .footer {
     block-size: 100dvh;
-    min-block-size: 668px;
+  }
 }
 
 .page-title {
